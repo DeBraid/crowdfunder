@@ -1,0 +1,11 @@
+<h1>Projects: View ALL (Index)</h1>
+<p>Listing projects</p>
+
+<% @projects.each do |project| %>
+<p>
+  <%= project[:title] %><br /> 
+  <%= project[:teaser] %> <br />
+  <%= project[:description] %> <br />
+  </p>
+
+<% end %>
