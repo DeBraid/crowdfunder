@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.14'
 
 gem 'pg' # replacing SQLite w/ PostgreSQL
+gem 'sorcery'
 
 group :tools do
   gem 'guard-rspec' # automatically runs our tests whenever there have been changes made to them
