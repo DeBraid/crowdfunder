@@ -1,6 +1,16 @@
 <h1>Projects: View ALL (Index)</h1>
 <p>Listing projects</p>
 
+<nav class="navbar"> 
+  <ul>
+    <li class="active">
+      <%= link_to "Home", projects_path %><br/>      
+      <%= link_to "Projects", projects_path %>
+    </li>
+  </ul>
+</nav>
+
+
 <% @projects.each do |project| %>
 <p>
   <%= project[:title] %><br /> 
