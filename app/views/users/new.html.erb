@@ -1,5 +1,5 @@
-<h1>Users: NEW</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Create Account -- New User</h1>
+<p>Fill in the form below to get started.</p>
 
 <%= form_for @user do |f| %>
  
@@ -38,5 +38,5 @@
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
   </div> 
-  <div class="actions"><%= f.submit %></div>
+  <div class="actions"><%= f.submit name="Create Account" %></div>
   <% end %>

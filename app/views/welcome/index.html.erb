@@ -1,3 +1,9 @@
 <h1>Welcome to CrowdFunder </h1>
-<p>placeholder</p>
+<p>No longer must you rely on friends, family and fools to raise money for your piece of shit venture!</p>
 
+    <% if !logged_in? %>
+          <%= link_to 'Create Account', [:new, :user], class: 'btn btn-primary' %>
+          <% else %>
+            
+            <%= link_to 'Already Logged in.  Click here to Logout', logout_path, :method => :delete, class: 'btn' %>
+          <% end %>
