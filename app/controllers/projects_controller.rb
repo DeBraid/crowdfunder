@@ -70,7 +70,7 @@ end
 
   private
     def project_params
-      params.require(:title).permit(:title, :teaser, :description, :goal, :user_id)
+      params.require(:title).permit(:title, :email, :first_name, :last_name, :teaser, :description, :goal, :user_id)
     end  
 # end
 

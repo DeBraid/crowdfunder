@@ -4,11 +4,11 @@
 
 <% @projects.each do |project| %>
 <p>
-  <%= project[:title] %><br />
+  <li class="title"><%= link_to "#{project[:title]}", "/projects/#{project.id}" %></li>
   <%= project[:teaser] %> <br />
   <%= project[:description] %> <br />
   <%= project[:goal] %> <br />
-  <%= link_to "#{project[:title]}", "/projects/#{project.id}" %><li class="title"></li>
+  
   </p>
 
 <% end %>

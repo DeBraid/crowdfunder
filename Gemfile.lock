@@ -203,5 +203,5 @@ DEPENDENCIES
   rails (= 3.2.14)
   rspec-rails (~> 2.0)
   sass-rails (~> 3.2.3)
-  sorcery
+  sorcery (~> 0.8.2)
   uglifier (>= 1.0.3)

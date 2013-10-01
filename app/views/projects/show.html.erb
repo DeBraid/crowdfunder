@@ -1,12 +1,10 @@
-<h2>Projects Show Page </h2>
+<h3>Projects Show Page </h3>
+
 
 <br/>
-<% params[:id] %>
-<br/>
 <h1>
-  <%= @project[:title] %>
+  <%= @project.title %>
 </h1>
 <br/>
-  <%= @project[:first_name] %>
-<br />
-  <%= @project[:last_name] %>
+  <%= @project.user.first_name %>
+  <%= @project.user.last_name %>
