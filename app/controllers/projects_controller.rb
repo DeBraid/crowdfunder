@@ -4,13 +4,13 @@ class ProjectsController < ApplicationController
     @projects = Project.all 
   end
 
-  # def show 
-  #   @project = Project.find(params[:id])
+  def show 
+    @project = Project.find(params[:id])
+  end
 
-  #   respond_to do |format|
-  #     format.html
-  #     format.json {render json: @project }
-  # end
+    # respond_to do |format|
+    #   format.html
+    #   format.json {render json: @project }
 end
 
 # def new
@@ -68,10 +68,10 @@ end
 #     # run this method after searching
 #   end
 
-#   private
-#     def project_params
-#       params.require(:project).permit(:name, :description, :price_in_cents)
-#     end  
+  private
+    def project_params
+      params.require(:title).permit(:title, :teaser, :description, :goal, :user_id)
+    end  
 # end
 
 
