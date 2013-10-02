@@ -19,6 +19,7 @@ describe "User Authentication" do
       fill_in "user[first_name]", :with => user.first_name
       fill_in "user[last_name]", :with => user.last_name
       fill_in "user[password]", :with => user.password
+      fill_in "user[password_confirmation]", :with => user.password_confirmation
       click_button "Create Account"
 
       # After submitting the form, should be redirected to root
@@ -46,6 +47,11 @@ describe "User Authentication" do
 
       page.should have_no_content("Account created")
       expect(page).to have_no_content("Account created")
+
+      # Should see "Try again" message on failure to register 
+      within(:css, ".alert") do
+        have_content("Try again")
+      end
     end
   end
 end

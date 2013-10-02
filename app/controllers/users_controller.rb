@@ -8,9 +8,9 @@ class UsersController < ApplicationController
     auto_login(@user)
     if @user.save
       session[:user_id] = @user.id
-        redirect_to "/", :notice => "Account created"
+      redirect_to root_url, :notice => "Account created"
     else
-      render :new
+      render :new 
     end
   end
 end
