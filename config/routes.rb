@@ -1,5 +1,7 @@
 Crowdfunder::Application.routes.draw do
 
+  match "maps" => "maps#index", :as => "maps" 
+
   match "logout" => "sessions#destroy", :as => "logout"
   match "login" => "sessions#new", :as => "login"
   

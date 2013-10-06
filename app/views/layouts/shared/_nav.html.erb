@@ -10,6 +10,9 @@
           <li class="<%= 'active' if controller_name == "projects" %>">
             <%= link_to 'Projects', :projects %>
           </li>
+          <li class="<%= 'active' if controller_name == "maps" %>">
+            <%= link_to 'Maps', :maps %>
+          </li>
         </ul>
           <div class="pull-right">
           <% if logged_in? %>
